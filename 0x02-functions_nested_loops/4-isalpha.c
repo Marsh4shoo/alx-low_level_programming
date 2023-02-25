@@ -7,10 +7,11 @@
  * Return: 1 if it is an alphabet and 0 if otherwise
  */
 
+
 int _isapha(int c)
 {
              	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
 	      	return (1);
-      	else 
+      else 
 	      	return (0);
 }
