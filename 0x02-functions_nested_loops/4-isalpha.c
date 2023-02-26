@@ -2,16 +2,15 @@
 
 /**
  * _isalpha - checks for alphabets
- * @c: parameters to be checked 
+ *@c: parameters to be checkeid
  *
- * Return: 1 if it is an alphabet and 0 if otherwise
+ *Return: 1 if it is an alphabet and 0 if otherwise
  */
 
-
-int _isapha(int c)
+int _isalpha(int c)
 {
-             	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
-	      	return (1);
-      else 
-	      	return (0);
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+		return (1);
+	else
+		return (0);
 }
