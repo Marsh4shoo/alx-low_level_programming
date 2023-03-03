@@ -1,18 +1,32 @@
 #include "main.h"
 
+
 /**
- * _isdigit - checks if parameter is a number between 0 to 9.
- * @c: input number.
- * Return: 1 if is a number (0 to 9), 0 in other case.
+ * _strncat - concatenate two strings
+ * using at most n bytes from src
+ * @dest: input value
+ * @src: input value
+ * @n: input value
+ *
+ * Return: dest
  */
-int _isdigit(int c)
+char *_strncat(char *dest, char *src, int n)
 {
-	if (c >= 48 && c <= 57)
+	int i;
+	int j;
+
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		return (1);
+		i++;
 	}
-	else
+	j = 0;
+	while (j < n && src[j] != '\0')
 	{
-		return (0);
+	dest[i] = src[j];
+	i++;
+	j++;
 	}
+	dest[i] = '\0';
+	return (dest);
 }
