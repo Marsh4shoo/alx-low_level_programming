@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * read_textfile- Reads file print to STDOUT.
- * @filename: Text File Being read
- * @letters: NUMBER Of Letters that will be read
- * Return: w- actual numbr Bytes Read and Printed
- *        0 when function Fails Or Filename Is NULL.
+ * read_textfile- Read A Text File Print STDOUT.
+ * @filename: Text File That is being Read
+ * @letters: NMBR OF Letters that will be Read
+ * Return: w- actual nmbr Of bytes that will be read and printed
+ *        0 when Function fails Or Filename Is NULL.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
