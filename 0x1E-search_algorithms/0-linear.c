@@ -1,24 +1,24 @@
-#include "search_algorithms.h"
+#include "search_algos.h"
 
 /**
- * custom_linear_search - finds a value in an integer array using Linear Search
- * @arr: the integer array
- * @len: length of the array
- * @target: the value to find
- * Return: the index of the first occurrence of the target or -1 if not found
+ * linear_search - a function that searches for a value in an array of integers
+ * using the Linear search algorithm
+ * @array: the array of integers
+ * @size: size of the array
+ * @value: the value to search for
+ * Return: the first index of value or -1 if it doesnt exist
  */
-int custom_linear_search(int *arr, size_t len, int target) {
-    size_t index;
+int linear_search(int *array, size_t size, int value)
+{
+	size_t i;
 
-    if (!arr)
-        return (-1);
-
-    for (index = 0; index < len; index++) {
-        printf("Checked value at index %ld = [%d]\n", index, arr[index]);
-        if (arr[index] == target)
-            return (index);
-    }
-    
-    return (-1);
+	if (!array)
+		return (-1);
+	for (i = 0; i < size; i++)
+	{
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		if (array[i] == value)
+			return (i);
+	}
+	return (-1);
 }
-
